@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Welcome to the Couple Scores App!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcomeTextView"
+        android:layout_marginRight="0.0dp"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+    <TextView
+        android:text="Please select one of the below options"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectTextView" />
+    <Button
+        android:text="Instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/instructionsButton" />
+    <Button
+        android:text="Enter Scores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/enterScoresButton" />
+    <Button
+        android:text="Rankings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rankingsButton" />
+    <Button
+        android:text="Vote Off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/voteOffButton" />
+</LinearLayout>

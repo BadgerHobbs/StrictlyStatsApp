@@ -1,0 +1,11 @@
+Newtonsoft.Json
+SQLite-net
+SQLiteNetExtensions
+SQLitePCLRaw.batteries_v2
+SQLitePCLRaw.core
+SQLitePCLRaw.lib.e_sqlite3.android
+SQLitePCLRaw.provider.e_sqlite3
+System.Buffers
+System.Memory
+System.Runtime.CompilerServices.Unsafe
+System.Runtime

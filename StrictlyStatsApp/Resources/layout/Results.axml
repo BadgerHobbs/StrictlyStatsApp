@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Start Time:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/StartTimeHeaderTextView" />
+    <TextView
+        android:inputType="time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/StartTimeTextView" />
+    <TextView
+        android:text="End Time:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EndTimeHeaderTextView" />
+    <TextView
+        android:inputType="time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EndTimeTextView" />
+    <TextView
+        android:text="Score:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ScoreHeaderTextView" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ScoreTextView" />
+    <TextView
+        android:text="Number Of Questions:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NumberOfQuestionsHeaderTextView" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/NumberOfQuestionsTextView" />
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ConfirmationMessageTextView" />
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Justification1TextView" />
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Justification2TextView" />
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Justification3TextView" />
+    <Button
+        android:text="Play Again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/PlayAgainButton" />
+    <Button
+        android:text="Quit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/QuitButton" />
+</LinearLayout>

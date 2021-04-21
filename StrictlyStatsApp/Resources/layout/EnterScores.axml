@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+	<TextView
+		android:text="Week Number"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/weekNumberTextView"
+	    android:textSize="24dp" />
+	<TextView
+		android:text=""
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/promptTextView"
+	    android:textSize="24dp" />
+	<Spinner
+		android:layout_width="match_parent"
+		android:layout_height="56.0dp"
+		android:textSize="24dp"
+		android:id="@+id/dancesSpinner" />
+    <TextView
+        android:text="Couple's Score:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CouplesScoreTextView"
+        android:textSize="24dp" />
+    <EditText
+ 		android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coupleScoreEditText" />
+    <Button
+        android:text="OK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/okButton" />
+	<Button
+		android:text="Cancel"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/cancelButton" />
+
+</LinearLayout>

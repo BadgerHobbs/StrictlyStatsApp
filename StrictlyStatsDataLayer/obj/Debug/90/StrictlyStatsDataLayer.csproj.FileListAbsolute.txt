@@ -1,0 +1,17 @@
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\bin\Debug\StrictlyStatsDataLayer.dll
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\bin\Debug\StrictlyStatsDataLayer.pdb
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\bin\Debug\StrictlyStatsDataLayer.StrictlyStatsDataLayer.apk
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\bin\Debug\StrictlyStatsDataLayer.StrictlyStatsDataLayer-Signed.apk
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\obj\Debug\90\StrictlyStatsDataLayer.nuget.stamp
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\obj\Debug\90\StrictlyStatsDataLayer.csprojAssemblyReference.cache
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\obj\Debug\90\libraryimports.cache.stamp
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\obj\Debug\90\res.flag
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\obj\Debug\90\StrictlyStatsDataLayer.csproj.CoreCompileInputs.cache
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\obj\Debug\90\StrictlyStatsDataLayer.dll
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\obj\Debug\90\StrictlyStatsDataLayer.pdb
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\obj\Debug\90\android\bin\StrictlyStatsDataLayer.StrictlyStatsDataLayer.apk
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\obj\Debug\90\res\values\strings.xml
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\obj\Debug\90\R.cs.flag
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\obj\Debug\90\R.txt
+C:\Users\rigg6519\source\repos\StrictlyStatsStarter\StrictlyStatsDataLayer\obj\Debug\90\uploadflags.txt
