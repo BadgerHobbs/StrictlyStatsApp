@@ -44,3 +44,6 @@ Xamarin.Android.Support.v7.RecyclerView
 Xamarin.Android.Support.Vector.Drawable
 Xamarin.Android.Support.VersionedParcelable
 Xamarin.Android.Support.ViewPager
+System.Reflection.Extensions
+netstandard
+System.Resources.ResourceManager
