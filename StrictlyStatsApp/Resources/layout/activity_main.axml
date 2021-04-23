@@ -39,4 +39,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/voteOffButton" />
+    <Button
+        android:text="Couple Scores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coupleScoresButton" />
 </LinearLayout>
