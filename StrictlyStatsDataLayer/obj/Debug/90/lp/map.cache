@@ -9,3 +9,6 @@ System.Buffers
 System.Memory
 System.Runtime.CompilerServices.Unsafe
 System.Runtime
+System.Reflection.Extensions
+netstandard
+System.Resources.ResourceManager
