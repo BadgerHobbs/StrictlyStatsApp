@@ -3793,6 +3793,9 @@ namespace StrictlyStats
 			// aapt resource value: 0x7F020002
 			public const int activity_main = 2130837506;
 			
+			// aapt resource value: 0x7F020003
+			public const int coupleScores = 2130837507;
+			
 			// aapt resource value: 0x7F0F001D
 			public const int design_bottom_navigation_item = 2131689501;
 			
@@ -3835,14 +3838,14 @@ namespace StrictlyStats
 			// aapt resource value: 0x7F0F002A
 			public const int design_text_input_password_icon = 2131689514;
 			
-			// aapt resource value: 0x7F020003
-			public const int EnterScores = 2130837507;
-			
 			// aapt resource value: 0x7F020004
-			public const int InstructionDetail = 2130837508;
+			public const int EnterScores = 2130837508;
 			
 			// aapt resource value: 0x7F020005
-			public const int Instructions = 2130837509;
+			public const int InstructionDetail = 2130837509;
+			
+			// aapt resource value: 0x7F020006
+			public const int Instructions = 2130837510;
 			
 			// aapt resource value: 0x7F0F002B
 			public const int mtrl_layout_snackbar = 2131689515;
@@ -3868,17 +3871,17 @@ namespace StrictlyStats
 			// aapt resource value: 0x7F0F0006
 			public const int notification_template_part_time = 2131689478;
 			
-			// aapt resource value: 0x7F020006
-			public const int RankedCouples = 2130837510;
-			
 			// aapt resource value: 0x7F020007
-			public const int Results = 2130837511;
+			public const int RankedCouples = 2130837511;
 			
 			// aapt resource value: 0x7F020008
-			public const int SelectCouple = 2130837512;
+			public const int Results = 2130837512;
 			
 			// aapt resource value: 0x7F020009
-			public const int SelectWeekNumber = 2130837513;
+			public const int SelectCouple = 2130837513;
+			
+			// aapt resource value: 0x7F020010
+			public const int SelectWeekNumber = 2130837520;
 			
 			// aapt resource value: 0x7F0F0033
 			public const int select_dialog_item_material = 2131689523;
@@ -3889,14 +3892,14 @@ namespace StrictlyStats
 			// aapt resource value: 0x7F0F0035
 			public const int select_dialog_singlechoice_material = 2131689525;
 			
-			// aapt resource value: 0x7F020010
-			public const int StatsForTheWeek = 2130837520;
+			// aapt resource value: 0x7F020011
+			public const int StatsForTheWeek = 2130837521;
 			
 			// aapt resource value: 0x7F0F0036
 			public const int support_simple_spinner_dropdown_item = 2131689526;
 			
-			// aapt resource value: 0x7F020011
-			public const int Winner = 2130837521;
+			// aapt resource value: 0x7F020012
+			public const int Winner = 2130837522;
 			
 			static Layout()
 			{

@@ -230,3 +230,4 @@ C:\Users\rigg6519\source\repos\BadgerHobbs\StrictlyStatsApp\StrictlyStatsApp\obj
 C:\Users\rigg6519\source\repos\BadgerHobbs\StrictlyStatsApp\StrictlyStatsApp\obj\Debug\90\android\assets\System.Web.Services.pdb
 C:\Users\rigg6519\source\repos\BadgerHobbs\StrictlyStatsApp\StrictlyStatsApp\obj\Debug\90\android\assets\System.Xml.Linq.pdb
 C:\Users\rigg6519\source\repos\BadgerHobbs\StrictlyStatsApp\StrictlyStatsApp\obj\Debug\90\android\assets\System.Xml.pdb
+C:\Users\rigg6519\source\repos\BadgerHobbs\StrictlyStatsApp\StrictlyStatsApp\obj\Debug\90\res\layout\couplescores.xml

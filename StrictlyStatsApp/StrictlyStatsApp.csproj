@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActivityType.cs" />
+    <Compile Include="CoupleScoresActivity.cs" />
     <Compile Include="InstructionDetailActivity.cs" />
     <Compile Include="Instructions.cs" />
     <Compile Include="InstructionsAdapter.cs" />
@@ -167,6 +168,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\InstructionDetail.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\CoupleScores.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
