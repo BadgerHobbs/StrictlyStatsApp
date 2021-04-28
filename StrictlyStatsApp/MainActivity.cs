@@ -101,9 +101,9 @@ namespace StrictlyStats
         // Function assigned to click of couples score button
         private void CoupleScoresButton_Click(object sender, System.EventArgs e)
         {
-            //Intent selectCoupleIntent = new Intent(this, typeof(SelectCoupleActivity));
-            //selectCoupleIntent.PutExtra("ActivityType", (int)ActivityType.VoteOff);
-            //StartActivity(selectCoupleIntent);
+            Intent selectCoupleIntent = new Intent(this, typeof(SelectCoupleActivity));
+            selectCoupleIntent.PutExtra("ActivityType", (int)ActivityType.CoupleScores);
+            StartActivity(selectCoupleIntent);
         }
 
         protected override void OnResume()

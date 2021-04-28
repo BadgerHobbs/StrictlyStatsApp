@@ -16,6 +16,7 @@ namespace StrictlyStats
     {
         EnterScores,
         Rankings,
-        VoteOff
+        VoteOff,
+        CoupleScores
     }
 }

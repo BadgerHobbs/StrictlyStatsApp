@@ -31,12 +31,22 @@ namespace StrictlyStats
 
             this.ListAdapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleListItem1, couples.ToArray<Couple>());
 
-            this.ListView.ItemClick += ListView_ItemClick;
+            // If this activity was opened by the vote off button in the main activity
+            if ((int)activityType == (int)ActivityType.VoteOff)
+            {
+                // Assign vote off method to listview item click
+                this.ListView.ItemClick += ListView_ItemClick_VoteOff;
+            }
+            // If this activity was opened by the couple scores button in the main activity
+            else if ((int)activityType == (int)ActivityType.CoupleScores)
+            {
+                // Assign select couple method to listview item click
+                this.ListView.ItemClick += ListView_ItemClick_SelectCouple;
+            }
         }
 
-        private void ListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        private void ListView_ItemClick_VoteOff(object sender, AdapterView.ItemClickEventArgs e)
         {
-
             Intent intent;
             position = e.Position;
             var dlgAlert = (new AlertDialog.Builder(this)).Create();
@@ -46,6 +56,14 @@ namespace StrictlyStats
             dlgAlert.SetButton2("Cancel", CancelButton_Click);
             dlgAlert.Show();
             return;
+        }
+
+        // Method to add to list view item for selecting a couple
+        private void ListView_ItemClick_SelectCouple(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            // Create intent for opening the couple scores activity & start it
+            Intent coupleScoresActivity = new Intent(this, typeof(CoupleScoresActivity));
+            StartActivity(coupleScoresActivity);
         }
 
 
