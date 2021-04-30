@@ -14,7 +14,6 @@ namespace StrictlyStats
     {
         Button enterScoresButton;
         Button voteOffButton;
-        Button coupleScoresButton; // Private property to hold Couple Score Button
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -48,10 +47,11 @@ namespace StrictlyStats
             voteOffButton = FindViewById<Button>(Resource.Id.voteOffButton);
             voteOffButton.Click += VoteOffButton_Click;
 
-
-            coupleScoresButton = FindViewById<Button>(Resource.Id.coupleScoresButton);
-
+            Button coupleScoresButton = FindViewById<Button>(Resource.Id.coupleScoresButton);
             coupleScoresButton.Click += CoupleScoresButton_Click;
+
+            Button couplesAdministrationButton = FindViewById<Button>(Resource.Id.couplesAdministrationButton);
+            couplesAdministrationButton.Click += CouplesAdministrationButton_Click;
         }
 
         private void ReadWriteStream(Stream readStream, Stream writeStream)
@@ -106,6 +106,16 @@ namespace StrictlyStats
             selectCoupleIntent.PutExtra("ActivityType", (int)ActivityType.CoupleScores);
 
             StartActivity(selectCoupleIntent);
+        }
+
+        // Function assigned to click of couples administration button
+        private void CouplesAdministrationButton_Click(object sender, System.EventArgs e)
+        {
+            Intent couplesAdministrationIntent = new Intent(this, typeof(CouplesAdministrationActivity));
+
+            couplesAdministrationIntent.PutExtra("ActivityType", (int)ActivityType.CouplesAdministration);
+
+            StartActivity(couplesAdministrationIntent);
         }
 
         protected override void OnResume()

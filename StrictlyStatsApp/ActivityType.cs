@@ -17,6 +17,7 @@ namespace StrictlyStats
         EnterScores,
         Rankings,
         VoteOff,
-        CoupleScores
+        CoupleScores,
+        CouplesAdministration
     }
 }
