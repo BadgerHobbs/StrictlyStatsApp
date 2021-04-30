@@ -61,11 +61,10 @@ namespace StrictlyStats
         // Method to add to list view item for selecting a couple
         private void ListView_ItemClick_SelectCouple(object sender, AdapterView.ItemClickEventArgs e)
         {
-            // Create intent for opening the couple scores activity
             Intent coupleScoresActivity = new Intent(this, typeof(CoupleScoresActivity));
-            // Add extra data to the intent to include the selected couple
+
             coupleScoresActivity.PutExtra("SelectedCoupleIndex", e.Position);
-            // Start the couple scores activity
+
             StartActivity(coupleScoresActivity);
         }
 
