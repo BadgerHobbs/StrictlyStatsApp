@@ -27,22 +27,20 @@ namespace StrictlyStats
             base.OnCreate(savedInstanceState);
             activityType = (ActivityType)Intent.GetIntExtra("ActivityType", -1);
 
-            couples = uow.Couples.GetCouplesStillInCompetition();
-
-            this.ListAdapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleListItem1, couples.ToArray<Couple>());
-
-            // If this activity was opened by the vote off button in the main activity
             if ((int)activityType == (int)ActivityType.VoteOff)
             {
-                // Assign vote off method to listview item click
                 this.ListView.ItemClick += ListView_ItemClick_VoteOff;
+
+                couples = uow.Couples.GetCouplesStillInCompetition();
             }
-            // If this activity was opened by the couple scores button in the main activity
             else if ((int)activityType == (int)ActivityType.CoupleScores)
             {
-                // Assign select couple method to listview item click
                 this.ListView.ItemClick += ListView_ItemClick_SelectCouple;
+
+                couples = uow.Couples.GetAll();
             }
+
+            this.ListAdapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleListItem1, couples.ToArray<Couple>());
         }
 
         private void ListView_ItemClick_VoteOff(object sender, AdapterView.ItemClickEventArgs e)

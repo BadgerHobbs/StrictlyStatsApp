@@ -28,7 +28,7 @@ namespace StrictlyStats
 
             int selectedCoupleIndex = (int)Intent.GetIntExtra("SelectedCoupleIndex", 0);
 
-            Couple selectedCouple = uow.Couples.GetCouplesStillInCompetition()[selectedCoupleIndex];
+            Couple selectedCouple = uow.Couples.GetAll()[selectedCoupleIndex];
 
             FindViewById<TextView>(Resource.Id.selectedCoupleTextView).Text = $"Selected Couple: {selectedCouple.ToString()}";
 
