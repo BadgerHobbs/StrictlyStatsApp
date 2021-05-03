@@ -340,20 +340,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rigg6519\\.nuget\\packages\\": {}
+    "C:\\Users\\Andrew\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rigg6519\\Source\\Repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsDataLayer\\StrictlyStatsDataLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Andrew\\Source\\Repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsDataLayer\\StrictlyStatsDataLayer.csproj",
       "projectName": "StrictlyStatsDataLayer",
-      "projectPath": "C:\\Users\\rigg6519\\Source\\Repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsDataLayer\\StrictlyStatsDataLayer.csproj",
-      "packagesPath": "C:\\Users\\rigg6519\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rigg6519\\Source\\Repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsDataLayer\\obj\\",
+      "projectPath": "C:\\Users\\Andrew\\Source\\Repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsDataLayer\\StrictlyStatsDataLayer.csproj",
+      "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andrew\\Source\\Repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsDataLayer\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\rigg6519\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

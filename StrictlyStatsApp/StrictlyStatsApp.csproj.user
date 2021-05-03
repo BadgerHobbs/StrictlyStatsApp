@@ -4,7 +4,7 @@
     <SelectedDevice>OnePlus A6000</SelectedDevice>
     <DefaultDevice>Android_Accelerated_x86_Oreo</DefaultDevice>
     <AndroidDesignerPreferredTheme>Theme.DeviceDefault</AndroidDesignerPreferredTheme>
-    <AndroidDesignerPreferredDevice>pixel_xl</AndroidDesignerPreferredDevice>
+    <AndroidDesignerPreferredDevice>Nexus 5X</AndroidDesignerPreferredDevice>
     <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>
