@@ -26,8 +26,6 @@ namespace StrictlyStats
 		
 		public static void UpdateIdValues()
 		{
-			global::StrictlyStatsDataLayer.Resource.String.app_name = global::StrictlyStats.Resource.String.app_name;
-			global::StrictlyStatsDataLayer.Resource.String.hello = global::StrictlyStats.Resource.String.hello;
 		}
 		
 		public partial class Animation
@@ -4210,11 +4208,11 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0d001a
 			public const int abc_toolbar_collapse_description = 2131558426;
 			
-			// aapt resource value: 0x7f0d0038
-			public const int action_settings = 2131558456;
-			
 			// aapt resource value: 0x7f0d0037
-			public const int app_name = 2131558455;
+			public const int action_settings = 2131558455;
+			
+			// aapt resource value: 0x7f0d0036
+			public const int app_name = 2131558454;
 			
 			// aapt resource value: 0x7f0d0028
 			public const int appbar_scrolling_view_behavior = 2131558440;
@@ -4233,9 +4231,6 @@ namespace StrictlyStats
 			
 			// aapt resource value: 0x7f0d002d
 			public const int fab_transformation_sheet_behavior = 2131558445;
-			
-			// aapt resource value: 0x7f0d0036
-			public const int hello = 2131558454;
 			
 			// aapt resource value: 0x7f0d002e
 			public const int hide_bottom_view_on_scroll_behavior = 2131558446;
