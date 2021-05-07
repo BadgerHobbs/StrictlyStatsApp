@@ -66,7 +66,6 @@ namespace StrictlyStats
             StartActivity(coupleScoresActivity);
         }
 
-
         private void CancelButton_Click(object sender, EventArgs e)
         {
             Finish();

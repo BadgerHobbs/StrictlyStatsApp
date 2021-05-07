@@ -111,9 +111,7 @@ namespace StrictlyStats
         // Function assigned to click of couples administration button
         private void CouplesAdministrationButton_Click(object sender, System.EventArgs e)
         {
-            Intent couplesAdministrationIntent = new Intent(this, typeof(CouplesAdministrationActivity));
-
-            couplesAdministrationIntent.PutExtra("ActivityType", (int)ActivityType.CouplesAdministration);
+            Intent couplesAdministrationIntent = new Intent(this, typeof(SelectAdministrationCoupleActivity));
 
             StartActivity(couplesAdministrationIntent);
         }
