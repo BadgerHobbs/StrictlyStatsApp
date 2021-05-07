@@ -4,7 +4,7 @@
     <SelectedDevice>Android_Accelerated_x86_Oreo</SelectedDevice>
     <DefaultDevice>Android_Accelerated_x86_Oreo</DefaultDevice>
     <AndroidDesignerPreferredTheme>Theme.DeviceDefault</AndroidDesignerPreferredTheme>
-    <AndroidDesignerPreferredDevice>Nexus 5X</AndroidDesignerPreferredDevice>
+    <AndroidDesignerPreferredDevice>pixel_xl</AndroidDesignerPreferredDevice>
     <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>
