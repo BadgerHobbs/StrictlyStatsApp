@@ -67,7 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActivityType.cs" />
-    <Compile Include="CouplesAdministrationActivity.cs" />
+    <Compile Include="CoupleAdministrationActivity.cs" />
     <Compile Include="CoupleScoresActivity.cs" />
     <Compile Include="InstructionDetailActivity.cs" />
     <Compile Include="Instructions.cs" />
@@ -75,6 +75,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="RankCouplesActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="SelectAdministrationCoupleActivity.cs" />
     <Compile Include="SelectCoupleActivity.cs" />
     <Compile Include="EnterScoresActivity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,7 +96,6 @@
     <AndroidResource Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\values\ic_launcher_background.xml" />
     <AndroidResource Include="Resources\values\strings.xml" />
-    <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher.xml" />
     <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher_round.xml" />
     <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
@@ -178,7 +178,12 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\CouplesAdministration.axml">
+    <AndroidResource Include="Resources\layout\CoupleAdministration.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SelectAdministrationCouple.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

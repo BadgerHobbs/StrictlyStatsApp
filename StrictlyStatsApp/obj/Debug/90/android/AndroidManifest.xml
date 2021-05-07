@@ -4,7 +4,7 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:allowBackup="true" android:icon="@mipmap/ic_launcher_foreground" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:name="android.app.Application" android:debuggable="true">
-    <activity android:label="CouplesAdministrationActivity" android:name="md5da82b19485d6f2d24050ab30543ee5c7.CouplesAdministrationActivity" />
+    <activity android:label="CoupleAdministrationActivity" android:name="md5da82b19485d6f2d24050ab30543ee5c7.CoupleAdministrationActivity" />
     <activity android:label="CoupleScoresActivity" android:name="md5da82b19485d6f2d24050ab30543ee5c7.CoupleScoresActivity" />
     <activity android:label="InstructionDetailActivity" android:name="md5da82b19485d6f2d24050ab30543ee5c7.InstructionDetailActivity" />
     <activity android:label="Instructions" android:name="md5da82b19485d6f2d24050ab30543ee5c7.Instructions" />
@@ -15,6 +15,7 @@
       </intent-filter>
     </activity>
     <activity android:label="Home" android:name="md5da82b19485d6f2d24050ab30543ee5c7.RankCouplesActivity" />
+    <activity android:label="SelectAdministrationCoupleActivity" android:name="md5da82b19485d6f2d24050ab30543ee5c7.SelectAdministrationCoupleActivity" />
     <activity android:label="Select Couple" android:name="md5da82b19485d6f2d24050ab30543ee5c7.SelectCoupleActivity" />
     <activity android:label="Enter Scores" android:name="md5da82b19485d6f2d24050ab30543ee5c7.EnterScoresActivity" />
     <activity android:label="Select Week Number" android:name="md5da82b19485d6f2d24050ab30543ee5c7.SelectWeekNumberActivity" />

@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\StrictlyStatsApp\\Resources",
+    "\\StrictlyStatsApp\\Resources\\layout",
+    "\\StrictlyStatsApp\\Resources\\values"
   ],
   "SelectedNode": "\\StrictlyStatsApp.sln",
   "PreviewInSolutionExplorer": false

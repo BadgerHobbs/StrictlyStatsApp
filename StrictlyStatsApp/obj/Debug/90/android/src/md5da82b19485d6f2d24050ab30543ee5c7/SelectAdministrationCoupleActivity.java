@@ -1,7 +1,7 @@
 package md5da82b19485d6f2d24050ab30543ee5c7;
 
 
-public class CouplesAdministrationActivity
+public class SelectAdministrationCoupleActivity
 	extends android.app.Activity
 	implements
 		mono.android.IGCUserPeer
@@ -12,15 +12,15 @@ public class CouplesAdministrationActivity
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"";
-		mono.android.Runtime.register ("StrictlyStats.CouplesAdministrationActivity, StrictlyStats", CouplesAdministrationActivity.class, __md_methods);
+		mono.android.Runtime.register ("StrictlyStats.SelectAdministrationCoupleActivity, StrictlyStats", SelectAdministrationCoupleActivity.class, __md_methods);
 	}
 
 
-	public CouplesAdministrationActivity ()
+	public SelectAdministrationCoupleActivity ()
 	{
 		super ();
-		if (getClass () == CouplesAdministrationActivity.class)
-			mono.android.TypeManager.Activate ("StrictlyStats.CouplesAdministrationActivity, StrictlyStats", "", this, new java.lang.Object[] {  });
+		if (getClass () == SelectAdministrationCoupleActivity.class)
+			mono.android.TypeManager.Activate ("StrictlyStats.SelectAdministrationCoupleActivity, StrictlyStats", "", this, new java.lang.Object[] {  });
 	}
 
 
