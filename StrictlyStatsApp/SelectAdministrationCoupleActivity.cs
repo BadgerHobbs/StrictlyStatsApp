@@ -32,7 +32,16 @@ namespace StrictlyStats
             FindViewById<ListView>(Resource.Id.coupleListView).Adapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleListItem1, couples.ToArray<Couple>());
 
             FindViewById<ListView>(Resource.Id.coupleListView).ItemClick += ListView_ItemClick_AdministrateCouple;
-            FindViewById<Button>(Resource.Id.addCoupleButon).Click += AddCoupleButton_ItemClick;
+            FindViewById<Button>(Resource.Id.addCoupleButon).Click += AddCoupleButton_Click;
+        }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
+
+            couples = uow.Couples.GetAll();
+
+            FindViewById<ListView>(Resource.Id.coupleListView).Adapter = new ArrayAdapter(this, Android.Resource.Layout.SimpleListItem1, couples.ToArray<Couple>());
         }
 
         // Method to add to list view item for selecting a couple to administrate
@@ -46,7 +55,7 @@ namespace StrictlyStats
         }
 
         // Method to add to list view item for selecting a couple to administrate
-        private void AddCoupleButton_ItemClick(object sender, System.EventArgs e)
+        private void AddCoupleButton_Click(object sender, System.EventArgs e)
         {
             Intent coupleAdministrationActivity = new Intent(this, typeof(CoupleAdministrationActivity));
 
