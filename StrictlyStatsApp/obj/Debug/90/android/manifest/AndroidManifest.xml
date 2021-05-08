@@ -7,7 +7,7 @@
     <activity android:label="CoupleAdministrationActivity" android:name="md5da82b19485d6f2d24050ab30543ee5c7.CoupleAdministrationActivity" />
     <activity android:label="CoupleScoresActivity" android:name="md5da82b19485d6f2d24050ab30543ee5c7.CoupleScoresActivity" />
     <activity android:label="InstructionDetailActivity" android:name="md5da82b19485d6f2d24050ab30543ee5c7.InstructionDetailActivity" />
-    <activity android:label="Instructions" android:name="md5da82b19485d6f2d24050ab30543ee5c7.Instructions" />
+    <activity android:configChanges="orientation|screenSize" android:label="Instructions" android:name="md5da82b19485d6f2d24050ab30543ee5c7.Instructions" />
     <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="md5da82b19485d6f2d24050ab30543ee5c7.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

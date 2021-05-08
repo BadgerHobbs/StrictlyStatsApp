@@ -3043,44 +3043,44 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a003a
 			public const int CTRL = 2131361850;
 			
-			// aapt resource value: 0x7f0a00e1
-			public const int ConfirmationMessageTextView = 2131362017;
+			// aapt resource value: 0x7f0a00e5
+			public const int ConfirmationMessageTextView = 2131362021;
 			
 			// aapt resource value: 0x7f0a00c0
 			public const int CouplesScoreTextView = 2131361984;
 			
-			// aapt resource value: 0x7f0a00db
-			public const int EndTimeHeaderTextView = 2131362011;
+			// aapt resource value: 0x7f0a00df
+			public const int EndTimeHeaderTextView = 2131362015;
 			
-			// aapt resource value: 0x7f0a00dc
-			public const int EndTimeTextView = 2131362012;
+			// aapt resource value: 0x7f0a00e0
+			public const int EndTimeTextView = 2131362016;
 			
 			// aapt resource value: 0x7f0a003b
 			public const int FUNCTION = 2131361851;
 			
-			// aapt resource value: 0x7f0a00e2
-			public const int Justification1TextView = 2131362018;
+			// aapt resource value: 0x7f0a00e6
+			public const int Justification1TextView = 2131362022;
 			
-			// aapt resource value: 0x7f0a00e3
-			public const int Justification2TextView = 2131362019;
+			// aapt resource value: 0x7f0a00e7
+			public const int Justification2TextView = 2131362023;
 			
-			// aapt resource value: 0x7f0a00e4
-			public const int Justification3TextView = 2131362020;
+			// aapt resource value: 0x7f0a00e8
+			public const int Justification3TextView = 2131362024;
 			
 			// aapt resource value: 0x7f0a003c
 			public const int META = 2131361852;
 			
-			// aapt resource value: 0x7f0a00df
-			public const int NumberOfQuestionsHeaderTextView = 2131362015;
+			// aapt resource value: 0x7f0a00e3
+			public const int NumberOfQuestionsHeaderTextView = 2131362019;
 			
-			// aapt resource value: 0x7f0a00e0
-			public const int NumberOfQuestionsTextView = 2131362016;
+			// aapt resource value: 0x7f0a00e4
+			public const int NumberOfQuestionsTextView = 2131362020;
 			
-			// aapt resource value: 0x7f0a00e5
-			public const int PlayAgainButton = 2131362021;
+			// aapt resource value: 0x7f0a00e9
+			public const int PlayAgainButton = 2131362025;
 			
-			// aapt resource value: 0x7f0a00e6
-			public const int QuitButton = 2131362022;
+			// aapt resource value: 0x7f0a00ea
+			public const int QuitButton = 2131362026;
 			
 			// aapt resource value: 0x7f0a003d
 			public const int SHIFT = 2131361853;
@@ -3088,17 +3088,17 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a003e
 			public const int SYM = 2131361854;
 			
+			// aapt resource value: 0x7f0a00e1
+			public const int ScoreHeaderTextView = 2131362017;
+			
+			// aapt resource value: 0x7f0a00e2
+			public const int ScoreTextView = 2131362018;
+			
 			// aapt resource value: 0x7f0a00dd
-			public const int ScoreHeaderTextView = 2131362013;
+			public const int StartTimeHeaderTextView = 2131362013;
 			
 			// aapt resource value: 0x7f0a00de
-			public const int ScoreTextView = 2131362014;
-			
-			// aapt resource value: 0x7f0a00d9
-			public const int StartTimeHeaderTextView = 2131362009;
-			
-			// aapt resource value: 0x7f0a00da
-			public const int StartTimeTextView = 2131362010;
+			public const int StartTimeTextView = 2131362014;
 			
 			// aapt resource value: 0x7f0a008d
 			public const int action_bar = 2131361933;
@@ -3121,17 +3121,17 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a0069
 			public const int action_bar_title = 2131361897;
 			
-			// aapt resource value: 0x7f0a00c9
-			public const int action_container = 2131361993;
+			// aapt resource value: 0x7f0a00cd
+			public const int action_container = 2131361997;
 			
 			// aapt resource value: 0x7f0a008e
 			public const int action_context_bar = 2131361934;
 			
-			// aapt resource value: 0x7f0a00d4
-			public const int action_divider = 2131362004;
+			// aapt resource value: 0x7f0a00d8
+			public const int action_divider = 2131362008;
 			
-			// aapt resource value: 0x7f0a00ca
-			public const int action_image = 2131361994;
+			// aapt resource value: 0x7f0a00ce
+			public const int action_image = 2131361998;
 			
 			// aapt resource value: 0x7f0a0003
 			public const int action_menu_divider = 2131361795;
@@ -3148,11 +3148,11 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a006b
 			public const int action_mode_close_button = 2131361899;
 			
-			// aapt resource value: 0x7f0a00cb
-			public const int action_text = 2131361995;
+			// aapt resource value: 0x7f0a00cf
+			public const int action_text = 2131361999;
 			
-			// aapt resource value: 0x7f0a00d5
-			public const int actions = 2131362005;
+			// aapt resource value: 0x7f0a00d9
+			public const int actions = 2131362009;
 			
 			// aapt resource value: 0x7f0a006c
 			public const int activity_chooser_view_content = 2131361900;
@@ -3160,8 +3160,8 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a002e
 			public const int add = 2131361838;
 			
-			// aapt resource value: 0x7f0a00e7
-			public const int addCoupleButon = 2131362023;
+			// aapt resource value: 0x7f0a00eb
+			public const int addCoupleButon = 2131362027;
 			
 			// aapt resource value: 0x7f0a007f
 			public const int alertTitle = 2131361919;
@@ -3178,8 +3178,8 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a004d
 			public const int auto = 2131361869;
 			
-			// aapt resource value: 0x7f0a00ef
-			public const int averageMarkTextView = 2131362031;
+			// aapt resource value: 0x7f0a00f3
+			public const int averageMarkTextView = 2131362035;
 			
 			// aapt resource value: 0x7f0a0036
 			public const int beginning = 2131361846;
@@ -3190,11 +3190,11 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a0044
 			public const int bottom = 2131361860;
 			
-			// aapt resource value: 0x7f0a00f1
-			public const int bottomMarkTextView = 2131362033;
+			// aapt resource value: 0x7f0a00f5
+			public const int bottomMarkTextView = 2131362037;
 			
-			// aapt resource value: 0x7f0a00c8
-			public const int btnHome = 2131361992;
+			// aapt resource value: 0x7f0a00c9
+			public const int btnHome = 2131361993;
 			
 			// aapt resource value: 0x7f0a0072
 			public const int buttonPanel = 2131361906;
@@ -3223,8 +3223,8 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a0086
 			public const int checkbox = 2131361926;
 			
-			// aapt resource value: 0x7f0a00d3
-			public const int chronometer = 2131362003;
+			// aapt resource value: 0x7f0a00d7
+			public const int chronometer = 2131362007;
 			
 			// aapt resource value: 0x7f0a0061
 			public const int clip_horizontal = 2131361889;
@@ -3250,8 +3250,8 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a00a8
 			public const int coupleIDEditText = 2131361960;
 			
-			// aapt resource value: 0x7f0a00e8
-			public const int coupleListView = 2131362024;
+			// aapt resource value: 0x7f0a00ec
+			public const int coupleListView = 2131362028;
 			
 			// aapt resource value: 0x7f0a00c1
 			public const int coupleScoreEditText = 2131361985;
@@ -3262,8 +3262,8 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a00af
 			public const int coupleScoresLinearLayout = 2131361967;
 			
-			// aapt resource value: 0x7f0a00ea
-			public const int coupleSpinner = 2131362026;
+			// aapt resource value: 0x7f0a00ee
+			public const int coupleSpinner = 2131362030;
 			
 			// aapt resource value: 0x7f0a00a4
 			public const int couplesAdministrationButton = 2131361956;
@@ -3355,8 +3355,8 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a0081
 			public const int group_divider = 2131361921;
 			
-			// aapt resource value: 0x7f0a00d7
-			public const int headingTextView = 2131362007;
+			// aapt resource value: 0x7f0a00db
+			public const int headingTextView = 2131362011;
 			
 			// aapt resource value: 0x7f0a0005
 			public const int home = 2131361797;
@@ -3367,8 +3367,8 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a0071
 			public const int icon = 2131361905;
 			
-			// aapt resource value: 0x7f0a00d6
-			public const int icon_group = 2131362006;
+			// aapt resource value: 0x7f0a00da
+			public const int icon_group = 2131362010;
 			
 			// aapt resource value: 0x7f0a0041
 			public const int ifRoom = 2131361857;
@@ -3376,11 +3376,23 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a006e
 			public const int image = 2131361902;
 			
-			// aapt resource value: 0x7f0a00cf
-			public const int info = 2131361999;
+			// aapt resource value: 0x7f0a00d3
+			public const int info = 2131362003;
+			
+			// aapt resource value: 0x7f0a00ca
+			public const int instructionDetailLinearLayout = 2131361994;
+			
+			// aapt resource value: 0x7f0a00cc
+			public const int instructionDetailTextView = 2131361996;
+			
+			// aapt resource value: 0x7f0a00cb
+			public const int instructionHeadingTextView = 2131361995;
 			
 			// aapt resource value: 0x7f0a009f
 			public const int instructionsButton = 2131361951;
+			
+			// aapt resource value: 0x7f0a00c6
+			public const int instructionsGridLayout = 2131361990;
 			
 			// aapt resource value: 0x7f0a0068
 			public const int italic = 2131361896;
@@ -3409,11 +3421,11 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a0070
 			public const int list_item = 2131361904;
 			
-			// aapt resource value: 0x7f0a00c7
-			public const int lstVwInstructions = 2131361991;
+			// aapt resource value: 0x7f0a00c8
+			public const int lstVwInstructions = 2131361992;
 			
-			// aapt resource value: 0x7f0a00f4
-			public const int masked = 2131362036;
+			// aapt resource value: 0x7f0a00f8
+			public const int masked = 2131362040;
 			
 			// aapt resource value: 0x7f0a009c
 			public const int message = 2131361948;
@@ -3445,14 +3457,14 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a0025
 			public const int normal = 2131361829;
 			
+			// aapt resource value: 0x7f0a00d5
+			public const int notification_background = 2131362005;
+			
 			// aapt resource value: 0x7f0a00d1
-			public const int notification_background = 2131362001;
+			public const int notification_main_column = 2131362001;
 			
-			// aapt resource value: 0x7f0a00cd
-			public const int notification_main_column = 2131361997;
-			
-			// aapt resource value: 0x7f0a00cc
-			public const int notification_main_column_container = 2131361996;
+			// aapt resource value: 0x7f0a00d0
+			public const int notification_main_column_container = 2131362000;
 			
 			// aapt resource value: 0x7f0a00c2
 			public const int okButton = 2131361986;
@@ -3490,8 +3502,8 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a0087
 			public const int radio = 2131361927;
 			
-			// aapt resource value: 0x7f0a00d8
-			public const int rankedCouplesListView = 2131362008;
+			// aapt resource value: 0x7f0a00dc
+			public const int rankedCouplesListView = 2131362012;
 			
 			// aapt resource value: 0x7f0a00a1
 			public const int rankingsButton = 2131361953;
@@ -3499,11 +3511,11 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a0055
 			public const int right = 2131361877;
 			
-			// aapt resource value: 0x7f0a00d0
-			public const int right_icon = 2131362000;
+			// aapt resource value: 0x7f0a00d4
+			public const int right_icon = 2131362004;
 			
-			// aapt resource value: 0x7f0a00ce
-			public const int right_side = 2131361998;
+			// aapt resource value: 0x7f0a00d2
+			public const int right_side = 2131362002;
 			
 			// aapt resource value: 0x7f0a00a7
 			public const int saveCoupleChangesButton = 2131361959;
@@ -3622,8 +3634,8 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a0056
 			public const int start = 2131361878;
 			
-			// aapt resource value: 0x7f0a00ec
-			public const int statsTextView = 2131362028;
+			// aapt resource value: 0x7f0a00f0
+			public const int statsTextView = 2131362032;
 			
 			// aapt resource value: 0x7f0a005b
 			public const int stretch = 2131361883;
@@ -3661,14 +3673,14 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a005a
 			public const int textStart = 2131361882;
 			
-			// aapt resource value: 0x7f0a00e9
-			public const int textView1 = 2131362025;
+			// aapt resource value: 0x7f0a00ed
+			public const int textView1 = 2131362029;
 			
-			// aapt resource value: 0x7f0a00ee
-			public const int textView3 = 2131362030;
+			// aapt resource value: 0x7f0a00f2
+			public const int textView3 = 2131362034;
 			
-			// aapt resource value: 0x7f0a00f0
-			public const int textView5 = 2131362032;
+			// aapt resource value: 0x7f0a00f4
+			public const int textView5 = 2131362036;
 			
 			// aapt resource value: 0x7f0a00bc
 			public const int text_input_password_toggle = 2131361980;
@@ -3682,8 +3694,8 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a001a
 			public const int textinput_helper_text = 2131361818;
 			
-			// aapt resource value: 0x7f0a00d2
-			public const int time = 2131362002;
+			// aapt resource value: 0x7f0a00d6
+			public const int time = 2131362006;
 			
 			// aapt resource value: 0x7f0a0023
 			public const int title = 2131361827;
@@ -3697,8 +3709,8 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a0045
 			public const int top = 2131361861;
 			
-			// aapt resource value: 0x7f0a00ed
-			public const int topMarkTextView = 2131362029;
+			// aapt resource value: 0x7f0a00f1
+			public const int topMarkTextView = 2131362033;
 			
 			// aapt resource value: 0x7f0a007d
 			public const int topPanel = 2131361917;
@@ -3727,8 +3739,8 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a00c4
 			public const int txtHeading = 2131361988;
 			
-			// aapt resource value: 0x7f0a00c6
-			public const int txtInstructions = 2131361990;
+			// aapt resource value: 0x7f0a00c7
+			public const int txtInstructions = 2131361991;
 			
 			// aapt resource value: 0x7f0a0034
 			public const int uniform = 2131361844;
@@ -3745,8 +3757,8 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a001b
 			public const int view_offset_helper = 2131361819;
 			
-			// aapt resource value: 0x7f0a00f3
-			public const int visible = 2131362035;
+			// aapt resource value: 0x7f0a00f7
+			public const int visible = 2131362039;
 			
 			// aapt resource value: 0x7f0a00a2
 			public const int voteOffButton = 2131361954;
@@ -3754,8 +3766,8 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a00ae
 			public const int votedOffWeekNumberEditText = 2131361966;
 			
-			// aapt resource value: 0x7f0a00eb
-			public const int weekNumberSpinner = 2131362027;
+			// aapt resource value: 0x7f0a00ef
+			public const int weekNumberSpinner = 2131362031;
 			
 			// aapt resource value: 0x7f0a00bd
 			public const int weekNumberTextView = 2131361981;
@@ -3763,8 +3775,8 @@ namespace StrictlyStats
 			// aapt resource value: 0x7f0a009d
 			public const int welcomeTextView = 2131361949;
 			
-			// aapt resource value: 0x7f0a00f2
-			public const int winnerTextView = 2131362034;
+			// aapt resource value: 0x7f0a00f6
+			public const int winnerTextView = 2131362038;
 			
 			// aapt resource value: 0x7f0a0043
 			public const int withText = 2131361859;
