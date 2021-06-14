@@ -3380,7 +3380,7 @@ namespace StrictlyStats
 			public const int info = 2131362003;
 			
 			// aapt resource value: 0x7f0a00ca
-			public const int instructionDetailLinearLayout = 2131361994;
+			public const int instructionDetailScrollView = 2131361994;
 			
 			// aapt resource value: 0x7f0a00cc
 			public const int instructionDetailTextView = 2131361996;

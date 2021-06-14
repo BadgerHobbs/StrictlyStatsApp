@@ -4675,7 +4675,7 @@ containing a value of this type.
         public static final int ifRoom=0x7f0a0041;
         public static final int image=0x7f0a006e;
         public static final int info=0x7f0a00d3;
-        public static final int instructionDetailLinearLayout=0x7f0a00ca;
+        public static final int instructionDetailScrollView=0x7f0a00ca;
         public static final int instructionDetailTextView=0x7f0a00cc;
         public static final int instructionHeadingTextView=0x7f0a00cb;
         public static final int instructionsButton=0x7f0a009f;
