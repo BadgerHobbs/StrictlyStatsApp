@@ -49,7 +49,7 @@ namespace StrictlyStats
             }
 
             AddTextView($"Total: {totalScore}\n" +
-                $"Average: {(totalScore/scoreCount).ToString()}");
+                $"Average: {Math.Round((totalScore/scoreCount), 2).ToString()}");
         }
 
         private void AddTextView(string text)
