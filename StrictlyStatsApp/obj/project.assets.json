@@ -1726,20 +1726,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Andrew\\.nuget\\packages\\": {}
+    "C:\\Users\\rigg6519\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Andrew\\source\\repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsApp\\StrictlyStatsApp.csproj",
+      "projectUniqueName": "C:\\Users\\rigg6519\\source\\repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsApp\\StrictlyStatsApp.csproj",
       "projectName": "StrictlyStatsApp",
-      "projectPath": "C:\\Users\\Andrew\\source\\repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsApp\\StrictlyStatsApp.csproj",
-      "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Andrew\\source\\repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsApp\\obj\\",
+      "projectPath": "C:\\Users\\rigg6519\\source\\repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsApp\\StrictlyStatsApp.csproj",
+      "packagesPath": "C:\\Users\\rigg6519\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\rigg6519\\source\\repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Andrew\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\rigg6519\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1752,8 +1752,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Andrew\\source\\repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsDataLayer\\StrictlyStatsDataLayer.csproj": {
-              "projectPath": "C:\\Users\\Andrew\\source\\repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsDataLayer\\StrictlyStatsDataLayer.csproj"
+            "C:\\Users\\rigg6519\\source\\repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsDataLayer\\StrictlyStatsDataLayer.csproj": {
+              "projectPath": "C:\\Users\\rigg6519\\source\\repos\\BadgerHobbs\\StrictlyStatsApp\\StrictlyStatsDataLayer\\StrictlyStatsDataLayer.csproj"
             }
           }
         }
