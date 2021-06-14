@@ -70,11 +70,11 @@ namespace StrictlyStats
         {
             if (!isEnabled)
             {
-                FindViewById<LinearLayout>(Resource.Id.instructionDetailLinearLayout).Visibility = ViewStates.Gone;
+                FindViewById<ScrollView>(Resource.Id.instructionDetailScrollView).Visibility = ViewStates.Gone;
             }
             else
             {
-                FindViewById<LinearLayout>(Resource.Id.instructionDetailLinearLayout).Visibility = ViewStates.Visible;
+                FindViewById<ScrollView>(Resource.Id.instructionDetailScrollView).Visibility = ViewStates.Visible;
 
                 FindViewById<TextView>(Resource.Id.instructionHeadingTextView).Text = selectedInstruction.InstructionHeading;
                 FindViewById<TextView>(Resource.Id.instructionDetailTextView).Text = selectedInstruction.InstructionDetail;
