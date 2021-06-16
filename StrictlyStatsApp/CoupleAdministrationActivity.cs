@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Text.RegularExpressions;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -25,25 +25,25 @@ namespace StrictlyStats
 
         bool isNewCouple = false;
         bool coupleEditTextObjectsEnabled = false;
-        Dictionary<String, TextView> coupleEditTextObjects;
+        Dictionary<String, CoupleAdministrationTextObject> coupleEditTextObjects;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.CoupleAdministration);
-
+             
             couples = uow.Couples.GetAll();
 
             int selectedCoupleIndex = (int)Intent.GetIntExtra("SelectedCoupleIndex", 0);
 
-            coupleEditTextObjects = new Dictionary<String, TextView>() {
-                { "coupleIDEditText", FindViewById<TextView>(Resource.Id.coupleIDEditText) },
-                { "celebrityFirstNameEditText", FindViewById<TextView>(Resource.Id.celebrityFirstNameEditText) },
-                { "celebrityLastNameEditText", FindViewById<TextView>(Resource.Id.celebrityLastNameEditText) },
-                { "professionalFirstNameEditText", FindViewById<TextView>(Resource.Id.professionalFirstNameEditText) },
-                { "professionalLastNameEditText", FindViewById<TextView>(Resource.Id.professionalLastNameEditText) },
-                { "celebrityStarRatingEditText", FindViewById<TextView>(Resource.Id.celebrityStarRatingEditText) },
-                { "votedOffWeekNumberEditText", FindViewById<TextView>(Resource.Id.votedOffWeekNumberEditText) }
+            coupleEditTextObjects = new Dictionary<String, CoupleAdministrationTextObject>() {
+                { "coupleIDEditText", new CoupleAdministrationTextObject("Couple ID", FindViewById<TextView>(Resource.Id.coupleIDEditText), typeof(int), false) },
+                { "celebrityFirstNameEditText", new CoupleAdministrationTextObject("Celebrity First Name", FindViewById<TextView>(Resource.Id.celebrityFirstNameEditText), typeof(string), false) },
+                { "celebrityLastNameEditText", new CoupleAdministrationTextObject("Celebrity Last Name", FindViewById<TextView>(Resource.Id.celebrityLastNameEditText), typeof(string), false) },
+                { "professionalFirstNameEditText", new CoupleAdministrationTextObject("Professional First Name", FindViewById<TextView>(Resource.Id.professionalFirstNameEditText), typeof(string), false) },
+                { "professionalLastNameEditText", new CoupleAdministrationTextObject("Professional Last Name", FindViewById<TextView>(Resource.Id.professionalLastNameEditText), typeof(string), false) },
+                { "celebrityStarRatingEditText", new CoupleAdministrationTextObject("Celebrity Star Rating", FindViewById<TextView>(Resource.Id.celebrityStarRatingEditText), typeof(int), false) },
+                { "votedOffWeekNumberEditText", new CoupleAdministrationTextObject("Voted Off Week Number", FindViewById<TextView>(Resource.Id.votedOffWeekNumberEditText), typeof(int), true) }
                 };
 
             if (selectedCoupleIndex == -1)
@@ -55,13 +55,13 @@ namespace StrictlyStats
             {
                 selectedCouple = uow.Couples.GetAll()[selectedCoupleIndex];
 
-                coupleEditTextObjects["coupleIDEditText"].Text = selectedCouple.CoupleID.ToString();
-                coupleEditTextObjects["celebrityFirstNameEditText"].Text = selectedCouple.CelebrityFirstName;
-                coupleEditTextObjects["celebrityLastNameEditText"].Text = selectedCouple.CelebrityLastName;
-                coupleEditTextObjects["professionalFirstNameEditText"].Text = selectedCouple.ProfessionalFirstName;
-                coupleEditTextObjects["professionalLastNameEditText"].Text = selectedCouple.ProfessionalLastName;
-                coupleEditTextObjects["celebrityStarRatingEditText"].Text = selectedCouple.CelebrityStarRating.ToString();
-                coupleEditTextObjects["votedOffWeekNumberEditText"].Text = selectedCouple.VotedOffWeekNumber.ToString();
+                coupleEditTextObjects["coupleIDEditText"].textView.Text = selectedCouple.CoupleID.ToString();
+                coupleEditTextObjects["celebrityFirstNameEditText"].textView.Text = selectedCouple.CelebrityFirstName;
+                coupleEditTextObjects["celebrityLastNameEditText"].textView.Text = selectedCouple.CelebrityLastName;
+                coupleEditTextObjects["professionalFirstNameEditText"].textView.Text = selectedCouple.ProfessionalFirstName;
+                coupleEditTextObjects["professionalLastNameEditText"].textView.Text = selectedCouple.ProfessionalLastName;
+                coupleEditTextObjects["celebrityStarRatingEditText"].textView.Text = selectedCouple.CelebrityStarRating.ToString();
+                coupleEditTextObjects["votedOffWeekNumberEditText"].textView.Text = selectedCouple.VotedOffWeekNumber.ToString();
             }
 
             FindViewById<TextView>(Resource.Id.editCoupleButton).Click += EditCoupleButton_Click;
@@ -73,8 +73,40 @@ namespace StrictlyStats
         {
             if (coupleEditTextObjectsEnabled)
             {
+                List<CoupleAdministrationTextObject> invalidInputs = GetInvalidInputs(coupleEditTextObjects);
+
+                if (invalidInputs.Count > 0)
+                {
+                    string invalidInputsString = "";
+                    bool isFirstInvalidInput = true;
+
+                    foreach (CoupleAdministrationTextObject invalidInput in invalidInputs)
+                    {
+                        if (!isFirstInvalidInput)
+                        {
+                            invalidInputsString += ", ";
+                        }
+
+                        invalidInputsString += invalidInput.label;
+
+                        isFirstInvalidInput = false;
+                    }
+
+                    AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+                    AlertDialog alert = dialog.Create();
+
+                    alert.SetTitle("Invalid Inputs!");
+                    alert.SetMessage("The following inputs are invalid: " + invalidInputsString);
+                    alert.SetButton("OK", (c, ev) => { });
+                    alert.Show();
+
+                    return;
+                }
+
                 coupleEditTextObjectsEnabled = false;
                 SetCoupleEditTextObjectsEnabled(coupleEditTextObjects, coupleEditTextObjectsEnabled);
+
+                FindViewById<TextView>(Resource.Id.saveCoupleChangesButton).Enabled = true;
 
                 FindViewById<TextView>(Resource.Id.editCoupleButton).Text = "Edit";
             }
@@ -83,15 +115,17 @@ namespace StrictlyStats
                 coupleEditTextObjectsEnabled = true;
                 SetCoupleEditTextObjectsEnabled(coupleEditTextObjects, coupleEditTextObjectsEnabled);
 
+                FindViewById<TextView>(Resource.Id.saveCoupleChangesButton).Enabled = false;
+
                 FindViewById<TextView>(Resource.Id.editCoupleButton).Text = "Finish Editing";
             }
         }
 
-        private void SetCoupleEditTextObjectsEnabled(Dictionary<String, TextView> coupleEditTextObjects, bool isEnabled)
+        private void SetCoupleEditTextObjectsEnabled(Dictionary<String, CoupleAdministrationTextObject> coupleEditTextObjects, bool isEnabled)
         {
-            foreach (KeyValuePair<String, TextView> keyValuePair in coupleEditTextObjects)
+            foreach (KeyValuePair<String, CoupleAdministrationTextObject> keyValuePair in coupleEditTextObjects)
             {
-                keyValuePair.Value.Enabled = isEnabled;
+                keyValuePair.Value.textView.Enabled = isEnabled;
             }
         }
 
@@ -138,24 +172,55 @@ namespace StrictlyStats
             alert.Show();
         }
 
-        private void UpdateCoupleValues(Couple couple, Dictionary<String, TextView> coupleEditTextObjects)
+        private void UpdateCoupleValues(Couple couple, Dictionary<String, CoupleAdministrationTextObject> coupleEditTextObjects)
         {
-            int coupleIDEditTextValue = 0;
-            Int32.TryParse(coupleEditTextObjects["coupleIDEditText"].Text, out coupleIDEditTextValue);
+            int coupleIDEditTextValue;
+            Int32.TryParse(coupleEditTextObjects["coupleIDEditText"].textView.Text, out coupleIDEditTextValue);
 
-            int celebrityStarRatingEditTextValue = 0;
-            Int32.TryParse(coupleEditTextObjects["celebrityStarRatingEditText"].Text, out celebrityStarRatingEditTextValue);
+            int celebrityStarRatingEditTextValue;
+            Int32.TryParse(coupleEditTextObjects["celebrityStarRatingEditText"].textView.Text, out celebrityStarRatingEditTextValue);
 
-            int votedOffWeekNumberEditTextValue = 0;
-            Int32.TryParse(coupleEditTextObjects["votedOffWeekNumberEditText"].Text, out votedOffWeekNumberEditTextValue);
+            int votedOffWeekNumberEditTextValue;
+            Int32.TryParse(coupleEditTextObjects["votedOffWeekNumberEditText"].textView.Text, out votedOffWeekNumberEditTextValue);
 
             couple.CoupleID = coupleIDEditTextValue;
-            couple.CelebrityFirstName = coupleEditTextObjects["celebrityFirstNameEditText"].Text;
-            couple.CelebrityLastName = coupleEditTextObjects["celebrityLastNameEditText"].Text;
-            couple.ProfessionalFirstName = coupleEditTextObjects["professionalFirstNameEditText"].Text;
-            couple.ProfessionalLastName = coupleEditTextObjects["professionalLastNameEditText"].Text;
+            couple.CelebrityFirstName = coupleEditTextObjects["celebrityFirstNameEditText"].textView.Text;
+            couple.CelebrityLastName = coupleEditTextObjects["celebrityLastNameEditText"].textView.Text;
+            couple.ProfessionalFirstName = coupleEditTextObjects["professionalFirstNameEditText"].textView.Text;
+            couple.ProfessionalLastName = coupleEditTextObjects["professionalLastNameEditText"].textView.Text;
             couple.CelebrityStarRating = celebrityStarRatingEditTextValue;
             couple.VotedOffWeekNumber = votedOffWeekNumberEditTextValue;
+        }
+
+        private List<CoupleAdministrationTextObject> GetInvalidInputs(Dictionary<String, CoupleAdministrationTextObject> coupleEditTextObjects)
+        {
+            List<CoupleAdministrationTextObject> invalidInputs = new List<CoupleAdministrationTextObject>();
+
+            Regex regex = new Regex(@"^[a-zA-Z0-9]*$");
+
+            foreach (KeyValuePair<String, CoupleAdministrationTextObject> keyValuePair in coupleEditTextObjects)
+            {
+                if (keyValuePair.Value.textView.Text == "" && keyValuePair.Value.allowNull)
+                {
+                    continue;
+                }
+
+                if (keyValuePair.Value.type == typeof(string) && !regex.IsMatch(keyValuePair.Value.textView.Text))
+                {
+                    invalidInputs.Add(keyValuePair.Value);
+                }
+                else if (keyValuePair.Value.type == typeof(int))
+                {
+                    int checkingValue;
+
+                    if (!Int32.TryParse(keyValuePair.Value.textView.Text, out checkingValue))
+                    {
+                        invalidInputs.Add(keyValuePair.Value);
+                    }
+                }
+            }
+
+            return invalidInputs;
         }
     }
 }
