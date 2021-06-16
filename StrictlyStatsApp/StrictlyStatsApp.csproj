@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="ActivityType.cs" />
     <Compile Include="CoupleAdministrationActivity.cs" />
+    <Compile Include="CoupleAdministrationTextObject.cs" />
     <Compile Include="CoupleScoresActivity.cs" />
     <Compile Include="InstructionDetailActivity.cs" />
     <Compile Include="Instructions.cs" />
